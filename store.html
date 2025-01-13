@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta
+      name="description"
+      content="Reach Worship band in Bear, Delaware. Come and see our mission of nothing but Jesus."
+    />
+    <meta
+      name="keywords"
+      content="Reach Worship, Delaware, DE, Nothing But Jesus, NBJ, worship, band, Reach Church, RW, Reach Worship DE, christian, Jesus, Jesus Christ, God"
+    />
+
+    <link rel="shortcut icon" href="Images/webLogo.ico" />
+    <link rel="icon" href="Images/webLogo.ico" />
+    <link rel="apple-touch-icon" href="Images/appLogo.ico" />
+
+    <title>Reach Worship DE</title>
+
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo|Raleway|Libre+Baskerville|Oswald|Palanquin"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <script defer src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer type="text/javascript" src="Scripts/script.js"></script>
+
+    <section class="page-top">
+      <nav class="site-nav" id="site-nav">
+        <ul class="nav">
+          <li>
+            <a href="tour.html#site-nav" class="other"><span>Tour</span></a>
+          </li>
+          <li>
+            <a href="music.html#site-nav" class="other"><span>Music</span></a>
+          </li>
+          <li>
+            <a href="index.html#site-nav" class="nav-logo">
+              <img
+                class="reach-home"
+                src="Images/ReachLogo.png"
+                alt="Reach Home Logo"
+              />
+            </a>
+          </li>
+
+          <li></li>
+          <li>
+            <a href="store.html#site-nav" class="active"><span>Store</span></a>
+          </li>
+          <li>
+            <a href="about.html#site-nav" class="other"><span>About</span></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="store">
+        <h2>BROWSE OUR STORE</h2>
+
+        <div class="shirt-list">
+          <h3>Shirts</h3>
+
+          <div class="shirts">
+            <img
+              src="Images/Store/Shirt/RW T-Shirt (Modern)/Ash.png"
+              alt="RW T-Shirt"
+              class="item-shirt"
+            />
+
+            <form
+              class="store-form"
+              action="Scripts/addMerch.html"
+              method="post"
+            >
+              <h4>$25.00</h4>
+
+              <label>Edition:</label>
+              <select
+                class="edition-shirt"
+                name="edition-shirt"
+                onchange="editionChangeShirt()"
+              >
+                <option value="Modern">Modern</option>
+                <option value="Classic">Classic</option>
+              </select>
+
+              <label>Color:</label>
+              <select
+                class="color-shirt"
+                name="color-shirt"
+                onchange="colorChangeShirt()"
+              >
+                <option value="/Ash.png">Ash</option>
+                <option value="/Indigo Blue.png">Indigo Blue</option>
+                <option value="/White.png">White</option>
+              </select>
+
+              <label>Size:</label>
+              <select class="size-shirt" name="size-shirt">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+
+              <label>Quantity:</label>
+              <input
+                type="number"
+                class="quantity-shirt"
+                name="quantity-shirt"
+                value="1"
+                min="1"
+                max="50"
+              />
+
+              <br />
+
+              <button type="submit" class="store-submit" name="order-shirt-btn">
+                Add to Cart
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="hoodie-list">
+        <h3>Hoodies</h3>
+
+        <div class="hoodies">
+          <img
+            src="Images/Store/Hoodie/RW Hoodie (Modern)/Ash.png"
+            alt="RW Hoodie (Classic)"
+            class="item-hoodie"
+          />
+
+          <form class="store-form" action="Scripts/addMerch.html" method="post">
+            <h4>$40.00</h4>
+
+            <label>Edition:</label>
+            <select
+              class="edition-hoodie"
+              name="edition-hoodie"
+              onchange="editionChangeHoodie()"
+            >
+              <option value="Modern">Modern</option>
+              <option value="Classic">Classic</option>
+            </select>
+
+            <label>Color:</label>
+            <select
+              class="color-hoodie"
+              name="color-hoodie"
+              onchange="colorChangeHoodie()"
+            >
+              <option value="/Ash.png">Ash</option>
+              <option value="/Charcoal Heather.png">Charcoal Heather</option>
+            </select>
+
+            <label>Size:</label>
+            <select class="size-hoodie" name="size-hoodie">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+
+            <label>Quantity:</label>
+            <input
+              type="number"
+              class="quantity-hoodie"
+              name="quantity-hoodie"
+              value="1"
+              min="1"
+              max="50"
+            />
+
+            <br />
+
+            <button type="submit" class="store-submit" name="order-hoodie-btn">
+              Add to Cart
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="hat-list">
+        <h3>Hats</h3>
+
+        <div class="hats">
+          <img
+            src="Images/Store/Hat/RW Dad Hat/Charcoal.png"
+            alt="RW Dad Hat"
+            class="item-hat"
+          />
+
+          <form class="store-form" action="Scripts/addMerch.html" method="post">
+            <h4>$18.00</h4>
+
+            <label>Color:</label>
+            <select
+              class="color-hat"
+              name="color-hat"
+              onchange="colorChangeHat()"
+            >
+              <option value="/Charcoal.png">Charcoal</option>
+              <option value="/White.png">White</option>
+            </select>
+
+            <label>Quantity:</label>
+            <input
+              type="number"
+              class="quantity-hat"
+              name="quantity-hat"
+              value="1"
+              min="1"
+              max="50"
+            />
+
+            <br />
+
+            <button type="submit" class="store-submit" name="order-hat-btn">
+              Add to Cart
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <a class="to-top" href="#top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <div class="footer">
+      <p class="footer-text">
+        <span>
+          <a
+            href="mailto:info@reachchurch.online?Subject=Hello%20Reach%20Worship!"
+            title="Open email"
+          >
+            info@reachchurch.online
+          </a></span
+        >
+        <span>(302) 824-4431</span>
+        <span>&copy Reach Worship 2025</span>
+        <span>Zachary Betters</span>
+      </p>
+      <div class="footer-social">
+        <a target="_blank" href="https://www.facebook.com/NothingButJesus/">
+          <i alt="Facebook" class="fa-brands fa-facebook"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/_reachchurch/?hl=en">
+          <i alt="Instagram" class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://open.spotify.com/artist/2tFNCpPM61936Ah9oN406C"
+        >
+          <i alt="Spotify" class="fa-brands fa-spotify"></i>
+        </a>
+        <span class="stretch"></span>
+      </div>
+    </div>
+  </body>
+</html>
