@@ -279,6 +279,9 @@ h3 {
   text-decoration: none;
   color: #ffffff;
 }
+.home h4 {
+  margin: 30px;
+}
 .home-promo {
   border-top: 3px solid #252525;
   border-bottom: 3px solid #252525;
@@ -300,7 +303,6 @@ h3 {
   font-size: 45px;
   letter-spacing: 5px;
   text-align: center;
-  margin: 20px;
 }
 .home-promo p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -334,9 +336,6 @@ h3 {
   align-items: center;
   position: relative;
 }
-.home-tour h4 {
-  padding-bottom: 60px;
-}
 .home-tour-cover,
 .home-tour-list {
   display: inline-block;
@@ -352,14 +351,15 @@ h3 {
   letter-spacing: 3px;
   text-align: center;
   list-style-type: none;
-  line-height: 40px;
+  line-height: 50px;
   color: #002c5f;
   padding: 15px;
   width: 50%;
+  margin: 30px;
 }
 .home-tour-promo ul li {
   font-family: "ostrich_sansmedium";
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bolder;
   list-style-type: none;
   text-align: center;
@@ -382,9 +382,6 @@ h3 {
   align-items: center;
   position: relative;
 }
-.home-music-promo h4 {
-  padding-bottom: 50px;
-}
 .home-album-promo input {
   position: absolute;
   right: 1%;
@@ -392,9 +389,6 @@ h3 {
 }
 .home-album-promo img {
   border-radius: 8px;
-}
-.home-event-promo h4 {
-  padding-bottom: 60px;
 }
 .home-event-promo img {
   border-radius: 10px;
@@ -406,7 +400,7 @@ h3 {
 }
 .home-event-promo a {
   text-decoration: underline;
-  color: #252525;
+  color: inherit;
 }
 .home-store {
   display: flex;
@@ -416,7 +410,6 @@ h3 {
 }
 .home-store-cover {
   display: inline-block;
-  padding: 20px;
 }
 .home-store-cover img {
   border-radius: 10px;
@@ -430,6 +423,7 @@ h3 {
   letter-spacing: 8px;
   text-align: center;
   margin-bottom: 15px;
+  margin: 15px;
   padding-top: 15px;
 }
 .home-store input {

@@ -40,7 +40,7 @@
     />
 
     <script defer src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script defer type="text/javascript" src="Scripts/script.js"></script>
+    <script defer type="module" src="scripts/index.js"></script>
 
     <section class="page-top">
       <div class="title" style="background-image: url('Images/HeaderTop.png')">
@@ -91,7 +91,16 @@
               <img src="Images/Home/RW Tour.png" alt="RW Tour Cover" />
             </div>
 
-            <div class="home-tour-list"></div>
+            <div class="home-tour-list">
+              <div class="home-tour-dates">
+                <!-- JS INSERTS DATA HERE -->
+              </div>
+              <input
+                type="button"
+                value="Find More Dates"
+                onclick="window.location = 'tour.html#site-nav';"
+              />
+            </div>
           </div>
         </div>
 

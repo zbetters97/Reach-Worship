@@ -40,7 +40,7 @@
     />
 
     <script defer src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script defer type="text/javascript" src="Scripts/script.js"></script>
+    <script defer type="text/javascript" src="scripts/store.js"></script>
 
     <section class="page-top">
       <nav class="site-nav" id="site-nav">
@@ -142,114 +142,126 @@
             </form>
           </div>
         </div>
-      </div>
 
-      <div class="hoodie-list">
-        <h3>Hoodies</h3>
+        <div class="hoodie-list">
+          <h3>Hoodies</h3>
 
-        <div class="hoodies">
-          <img
-            src="Images/Store/Hoodie/RW Hoodie (Modern)/Ash.png"
-            alt="RW Hoodie (Classic)"
-            class="item-hoodie"
-          />
-
-          <form class="store-form" action="Scripts/addMerch.html" method="post">
-            <h4>$40.00</h4>
-
-            <label>Edition:</label>
-            <select
-              class="edition-hoodie"
-              name="edition-hoodie"
-              onchange="editionChangeHoodie()"
-            >
-              <option value="Modern">Modern</option>
-              <option value="Classic">Classic</option>
-            </select>
-
-            <label>Color:</label>
-            <select
-              class="color-hoodie"
-              name="color-hoodie"
-              onchange="colorChangeHoodie()"
-            >
-              <option value="/Ash.png">Ash</option>
-              <option value="/Charcoal Heather.png">Charcoal Heather</option>
-            </select>
-
-            <label>Size:</label>
-            <select class="size-hoodie" name="size-hoodie">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-            </select>
-
-            <label>Quantity:</label>
-            <input
-              type="number"
-              class="quantity-hoodie"
-              name="quantity-hoodie"
-              value="1"
-              min="1"
-              max="50"
+          <div class="hoodies">
+            <img
+              src="Images/Store/Hoodie/RW Hoodie (Modern)/Ash.png"
+              alt="RW Hoodie (Classic)"
+              class="item-hoodie"
             />
 
-            <br />
-
-            <button type="submit" class="store-submit" name="order-hoodie-btn">
-              Add to Cart
-              <i class="fa-solid fa-cart-shopping"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <div class="hat-list">
-        <h3>Hats</h3>
-
-        <div class="hats">
-          <img
-            src="Images/Store/Hat/RW Dad Hat/Charcoal.png"
-            alt="RW Dad Hat"
-            class="item-hat"
-          />
-
-          <form class="store-form" action="Scripts/addMerch.html" method="post">
-            <h4>$18.00</h4>
-
-            <label>Color:</label>
-            <select
-              class="color-hat"
-              name="color-hat"
-              onchange="colorChangeHat()"
+            <form
+              class="store-form"
+              action="Scripts/addMerch.html"
+              method="post"
             >
-              <option value="/Charcoal.png">Charcoal</option>
-              <option value="/White.png">White</option>
-            </select>
+              <h4>$40.00</h4>
 
-            <label>Quantity:</label>
-            <input
-              type="number"
-              class="quantity-hat"
-              name="quantity-hat"
-              value="1"
-              min="1"
-              max="50"
+              <label>Edition:</label>
+              <select
+                class="edition-hoodie"
+                name="edition-hoodie"
+                onchange="editionChangeHoodie()"
+              >
+                <option value="Modern">Modern</option>
+                <option value="Classic">Classic</option>
+              </select>
+
+              <label>Color:</label>
+              <select
+                class="color-hoodie"
+                name="color-hoodie"
+                onchange="colorChangeHoodie()"
+              >
+                <option value="/Ash.png">Ash</option>
+                <option value="/Charcoal Heather.png">Charcoal Heather</option>
+              </select>
+
+              <label>Size:</label>
+              <select class="size-hoodie" name="size-hoodie">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+
+              <label>Quantity:</label>
+              <input
+                type="number"
+                class="quantity-hoodie"
+                name="quantity-hoodie"
+                value="1"
+                min="1"
+                max="50"
+              />
+
+              <br />
+
+              <button
+                type="submit"
+                class="store-submit"
+                name="order-hoodie-btn"
+              >
+                Add to Cart
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="hat-list">
+          <h3>Hats</h3>
+
+          <div class="hats">
+            <img
+              src="Images/Store/Hat/RW Dad Hat/Charcoal.png"
+              alt="RW Dad Hat"
+              class="item-hat"
             />
 
-            <br />
+            <form
+              class="store-form"
+              action="Scripts/addMerch.html"
+              method="post"
+            >
+              <h4>$18.00</h4>
 
-            <button type="submit" class="store-submit" name="order-hat-btn">
-              Add to Cart
-              <i class="fa-solid fa-cart-shopping"></i>
-            </button>
-          </form>
+              <label>Color:</label>
+              <select
+                class="color-hat"
+                name="color-hat"
+                onchange="colorChangeHat()"
+              >
+                <option value="/Charcoal.png">Charcoal</option>
+                <option value="/White.png">White</option>
+              </select>
+
+              <label>Quantity:</label>
+              <input
+                type="number"
+                class="quantity-hat"
+                name="quantity-hat"
+                value="1"
+                min="1"
+                max="50"
+              />
+
+              <br />
+
+              <button type="submit" class="store-submit" name="order-hat-btn">
+                Add to Cart
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
 
-      <a class="to-top" href="#top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
+        <a class="to-top" href="#top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
     </div>
 
     <div class="footer">

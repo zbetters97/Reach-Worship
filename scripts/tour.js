@@ -4,7 +4,7 @@ import {
   getLocation,
   checkDistance,
   setMarkers,
-} from "./google-map.js";
+} from "../data/map.js";
 
 $(document).ready(function () {
   $(window).scroll(() =>
